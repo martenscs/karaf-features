@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>builder</groupId>
-	<artifactId>builder</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	<modules>
-		<module>apache-servicemix-nmr-1.6.1-features</module>
-		<module>standard-2.3.0-features</module>
-		<module>apache-camel-2.12.2-features </module>
-		<module>enterprise-2.3.0-features</module>
-		<module>jclouds-karaf-1.6.2-incubating-features</module>
-		<module>standard-2.3.3-features</module>
-		<module>apache-servicemix-4.5.3-features</module>
-		<module>enterprise-2.3.3-features</module>
-		<module>openejb-feature-4.5.2-features</module>
-
-  </modules>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>builder</groupId>
+    <artifactId>builder</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>standard-2.3.0-features</module>
+        <module>standard-2.3.3-features</module>
+        <module>standard-2.3.4-features</module>
+        <module>enterprise-2.3.0-features</module>
+        <module>enterprise-2.3.3-features</module>
+        <module>enterprise-2.3.4-features</module>
+        <module>apache-camel-2.12.2-features </module>
+        <module>jclouds-karaf-1.6.2-incubating-features</module>
+        <module>apache-servicemix-4.5.3-features</module>
+        <module>openejb-feature-4.5.2-features</module>
+        <module>apache-servicemix-nmr-1.6.1-features</module>
+    </modules>
 </project>
