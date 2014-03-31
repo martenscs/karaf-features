@@ -439,13 +439,11 @@
         <bundle start-level="30">mvn:org.apache.karaf.management.mbeans/org.apache.karaf.management.mbeans.dev/2.3.4</bundle>
     </feature>
     <feature name="eventadmin" description="OSGi Event Admin service specification for event-based communication"
-        version="2.3.4"
-    >
+        version="2.3.4">
         <bundle start-level='30'>mvn:org.apache.felix/org.apache.felix.eventadmin/1.3.2</bundle>
     </feature>
     <feature name="jasypt-encryption" description="Advanced encryption support for Karaf security" version="2.3.4"
-        resolver="(obr)"
-    >
+        resolver="(obr)">
         <bundle dependency="true" start-level="30">mvn:commons-codec/commons-codec/1.9</bundle>
         <bundle dependency='true' start-level="30">mvn:commons-lang/commons-lang/2.6</bundle>
         <bundle dependency='true' start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jasypt/1.9.1_1
@@ -454,8 +452,7 @@
     </feature>
     <feature name="blueprint-web"
         description="Provides an OSGi-aware Servlet ContextListener for bootstrapping blueprint inside web-bundle containers"
-        version="2.3.4" resolver="(obr)"
-    >
+        version="2.3.4" resolver="(obr)">
         <feature>war</feature>
         <bundle>mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.webosgi/1.0.1</bundle>
     </feature>
