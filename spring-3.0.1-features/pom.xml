@@ -1,13 +1,15 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.martenscs</groupId>
-	<artifactId>enterprise-2.3.4-features</artifactId>
+	<artifactId>spring-3.0.1-features</artifactId>
 	<version>2.3.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<repositories>
 		<repository>
-			<id>sonatype.net</id>
-			<url>http://repo1.maven.org/maven2/</url>
+			<id>eclipse-gemini</id>
+			<name>Eclipse Gemini Maven repository</name>
+			<url>http://download.eclipse.org/gemini/mvn/</url>
 		</repository>
 		<repository>
 			<id>EclipseLink Repo</id>
@@ -23,34 +25,14 @@
 			<name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name>
 			<url>http://repository.springsource.com/maven/bundles/external</url>
 		</repository>
+
+
 	</repositories>
 	<properties>
-		<domain.context>enterprise-2.3.4-features</domain.context>
+		<domain.context>spring-3.0.1-features</domain.context>
 	</properties>
 	<build>
 		<plugins>
-			<plugin>
-				<artifactId>maven-antrun-plugin</artifactId>
-				<version>1.6</version>
-				<executions>
-					<!-- Modify the target platform to reference the local p2 repository -->
-					<execution>
-						<id>add-libs</id>
-						<phase>compile</phase>
-						<configuration>
-							<target>
-								<!--copy our stuff into database named domain -->
-								<copy todir="${project.build.directory}/source/plugins">
-									<fileset dir="lib" />
-								</copy>
-							</target>
-						</configuration>
-						<goals>
-							<goal>run</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
 			<plugin>
 				<groupId>net.martenscs</groupId>
 				<artifactId>karaf-to-p2-plugin</artifactId>
@@ -73,7 +55,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
 			<!-- Publish a p2 repository from the plain dbaccess bundles -->
 			<plugin>
 				<groupId>org.eclipse.tycho.extras</groupId>
@@ -122,7 +103,9 @@
 						<phase>install</phase>
 						<configuration>
 							<target>
-								<copy file="${project.build.directory}/${project.build.finalName}.war" tofile="${project.build.directory}/${domain.context}.war" />
+								<copy
+									file="${project.build.directory}/${project.build.finalName}.war"
+									tofile="${project.build.directory}/${domain.context}.war" />
 							</target>
 						</configuration>
 						<goals>
