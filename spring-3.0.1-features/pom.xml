@@ -25,7 +25,11 @@
 			<name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name>
 			<url>http://repository.springsource.com/maven/bundles/external</url>
 		</repository>
-
+        <repository>
+            <id>http://maven-us.nuxeo.org/</id>
+            <name></name>
+            <url>http://zodiac.springsource.com/maven/bundles/release/</url>
+        </repository>
 
 	</repositories>
 	<properties>
