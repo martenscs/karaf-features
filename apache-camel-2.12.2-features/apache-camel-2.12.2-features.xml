@@ -17,6 +17,7 @@
 -->
 <features name='camel-2.12.2'>
 
+ 
   <repository>mvn:org.apache.cxf.karaf/apache-cxf/2.7.7/xml/features</repository>
 
 
