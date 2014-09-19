@@ -10,25 +10,25 @@
 			<id>google</id>
 			<url>http://scriptengines.googlecode.com/svn/m2-repo</url>
 		</repository>
-        <repository>
-            <id>EclipseLink Repo</id>
-            <url>http://www.eclipse.org/downloads/download.php?r=1&amp;nf=1&amp;file=/rt/eclipselink/maven.repo</url>
-        </repository>
-        <repository>
-            <id>com.springsource.repository.bundles.release</id>
-            <name>SpringSource Enterprise Bundle Repository - SpringSource Bundle Releases</name>
-            <url>http://repository.springsource.com/maven/bundles/release</url>
-        </repository>
-        <repository>
-            <id>com.springsource.repository.bundles.external</id>
-            <name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name>
-            <url>http://repository.springsource.com/maven/bundles/external</url>
-        </repository>
-        <repository>
-            <id>http://maven-us.nuxeo.org/</id>
-            <name></name>
-            <url>http://zodiac.springsource.com/maven/bundles/release/</url>
-        </repository>
+		<repository>
+			<id>EclipseLink Repo</id>
+			<url>http://www.eclipse.org/downloads/download.php?r=1&amp;nf=1&amp;file=/rt/eclipselink/maven.repo</url>
+		</repository>
+		<repository>
+			<id>com.springsource.repository.bundles.release</id>
+			<name>SpringSource Enterprise Bundle Repository - SpringSource Bundle Releases</name>
+			<url>http://repository.springsource.com/maven/bundles/release</url>
+		</repository>
+		<repository>
+			<id>com.springsource.repository.bundles.external</id>
+			<name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name>
+			<url>http://repository.springsource.com/maven/bundles/external</url>
+		</repository>
+		<repository>
+			<id>http://maven-us.nuxeo.org/</id>
+			<name></name>
+			<url>http://zodiac.springsource.com/maven/bundles/release/</url>
+		</repository>
 	</repositories>
 	<properties>
 		<domain.context>apache-camel-2.13.2-features</domain.context>
@@ -47,6 +47,7 @@
 							<goal>convert-to-eclipse</goal>
 						</goals>
 						<configuration>
+							<includeSource>true</includeSource>
 							<forceStartAllActivators>true</forceStartAllActivators>
 							<featureFile>${domain.context}.xml</featureFile>
 							<overWrite>true</overWrite>
