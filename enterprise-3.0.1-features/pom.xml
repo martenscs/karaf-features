@@ -48,6 +48,7 @@
 							<outputDirectory> ${project.build.directory}/source/plugins
 							</outputDirectory>
 							<categoryDirectory>./</categoryDirectory>
+							<includeSource>true</includeSource>
 						</configuration>
 					</execution>
 				</executions>

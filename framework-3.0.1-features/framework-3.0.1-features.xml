@@ -43,11 +43,13 @@
 		<bundle start-level="30">mvn:org.ops4j.pax.swissbox/pax-swissbox-property/1.7.0</bundle>
 		<bundle start-level="30">mvn:org.ops4j.base/ops4j-base-net/1.4.0</bundle>
 		<bundle start-level="30">mvn:org.ops4j.base/ops4j-base-monitors/1.4.0</bundle>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jasypt/1.9.1_1</bundle>
 		<bundle start-level="30">mvn:org.apache.karaf.features/org.apache.karaf.features.command/3.0.1</bundle>
 		<bundle start-level="30">mvn:org.apache.karaf.shell/org.apache.karaf.shell.console/3.0.1</bundle>
 		<bundle start-level="30">mvn:org.apache.karaf.jaas/org.apache.karaf.jaas.modules/3.0.1</bundle>
 		<bundle start-level="30">mvn:org.apache.karaf.jaas/org.apache.karaf.jaas.config/3.0.1</bundle>
 		<bundle start-level="30">mvn:org.apache.karaf.jaas/org.apache.karaf.jaas.boot/3.0.1</bundle>
+		<bundle start-level="30">mvn:org.apache.karaf.jaas/org.apache.karaf.jaas.jasypt/3.0.1</bundle>
 		<bundle start-level="30">mvn:org.apache.sshd/sshd-core/0.9.0</bundle>
 		<bundle start-level="30">mvn:org.apache.karaf.bundle/org.apache.karaf.bundle.command/3.0.1</bundle>
 		<bundle start-level="30">mvn:org.apache.karaf.shell/org.apache.karaf.shell.table/3.0.1</bundle>
