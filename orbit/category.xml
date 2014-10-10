@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+    <category-def label="orbit-features" name="orbit-features"/>
+        <feature id="org.apache.commons" version="1.2" url="features/org.apache.commons_1.2.jar">
+        <category name="orbit-features"/>
+    </feature>
+    <feature id="pax-logging" version="0.2.3" url="features/pax-logging_0.2.3.jar">
+        <category name="orbit-features"/>
+    </feature>
+    <feature id="grizzly" version="2.1.4" url="features/grizzly_2.1.4.jar">
+        <category name="orbit-features"/>
+    </feature>
+</site>

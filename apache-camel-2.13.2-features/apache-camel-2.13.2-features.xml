@@ -573,6 +573,10 @@
 		<bundle dependency='true'>mvn:com.fasterxml.jackson.core/jackson-databind/2.3.3</bundle>
 		<bundle dependency='true'>mvn:com.fasterxml.jackson.core/jackson-annotations/2.3.3</bundle>
 		<bundle dependency='true'>mvn:com.fasterxml.jackson.module/jackson-module-jaxb-annotations/2.3.3</bundle>
+
+		<bundle>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-base/2.3.3</bundle>
+		<bundle>mvn:com.fasterxml.jackson.jaxrs/jackson-jaxrs-xml-provider/2.3.3</bundle>
+		<bundle>mvn:com.fasterxml.jackson.dataformat/jackson-dataformat-xml/2.3.3</bundle>
 		<feature version='2.13.2'>camel-core</feature>
 		<bundle>mvn:org.apache.camel/camel-jackson/2.13.2</bundle>
 	</feature>

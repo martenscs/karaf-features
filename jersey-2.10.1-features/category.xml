@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+    <category-def label="jersey" name="jersey"/>
+        <feature id="jackson" version="2.3.0" url="features/jackson_2.3.0.jar">
+        <category name="jersey"/>
+    </feature>
+</site>
