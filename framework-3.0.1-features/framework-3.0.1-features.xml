@@ -2,9 +2,12 @@
 <features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="framework-3.0.1">
 	<feature name="framework" version="3.0.1" description="Karaf core feature">
 		<details>The Apache Software Foundation provides support for the Apache community of open-source software projects.
-			The Apache projects are characterized by a collaborative, consensus based development process, an open and
-			pragmatic software license, and a desire to create high quality software that leads the way in its field.
-			We consider ourselves not simply a group of projects sharing a server, but rather a community of developers
+			The Apache
+			projects are characterized by a collaborative, consensus based development process, an open and
+			pragmatic software license,
+			and a desire to create high quality software that leads the way in its field.
+			We consider ourselves not simply a group of
+			projects sharing a server, but rather a community of developers
 			and users.
 		</details>
 		<bundle start-level="5" start="true">mvn:org.ops4j.base/ops4j-base-lang/1.4.0</bundle>
@@ -62,9 +65,12 @@
 	</feature>
 	<feature name="aries" version="3.0.1" description="Aries core feature">
 		<details>The Apache Software Foundation provides support for the Apache community of open-source software projects.
-			The Apache projects are characterized by a collaborative, consensus based development process, an open and
-			pragmatic software license, and a desire to create high quality software that leads the way in its field.
-			We consider ourselves not simply a group of projects sharing a server, but rather a community of developers
+			The Apache
+			projects are characterized by a collaborative, consensus based development process, an open and
+			pragmatic software license,
+			and a desire to create high quality software that leads the way in its field.
+			We consider ourselves not simply a group of
+			projects sharing a server, but rather a community of developers
 			and users.
 		</details>
 		<bundle start-level="12" start="true">mvn:org.ow2.asm/asm-all/4.1</bundle>
@@ -78,6 +84,36 @@
 		<bundle start-level="20" start="true">mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.core/1.4.0</bundle>
 		<bundle start-level="30">mvn:org.apache.aries.quiesce/org.apache.aries.quiesce.api/1.0.0</bundle>
 	</feature>
-	
-	
+	<feature name="org.apache.felix.webconsole" version="4.0.0">
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.webconsole/4.0.0
+		</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.webconsole.plugins.packageadmin/1.0.0
+		</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.webconsole.plugins.event/1.0.2
+		</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.webconsole.plugins.memoryusage/1.0.2
+		</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.bundlerepository/1.6.4
+		</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.eventadmin/1.2.14
+		</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.http.whiteboard/2.2.0
+		</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.metatype/1.0.4
+		</bundle>
+	</feature>
+	<feature name="commons" description="Provides an OSGi-aware Apache Commons" version="2.3.4" resolver="(obr)">
+		<bundle>mvn:commons-logging/commons-logging-api/1.1</bundle>
+		<bundle dependency="true" start-level="30">mvn:commons-codec/commons-codec/1.9</bundle>
+		<bundle dependency='true' start-level="30">mvn:commons-lang/commons-lang/2.6</bundle>
+		<bundle dependency="true" start-level="30">mvn:commons-collections/commons-collections/3.2.1</bundle>
+		<bundle dependency="true" start-level="30">mvn:commons-beanutils/commons-beanutils/1.9.1</bundle>
+		<bundle>mvn:commons-cli/commons-cli/1.2</bundle>
+		<bundle>mvn:commons-pool/commons-pool/1.5.7</bundle>
+		<bundle>mvn:commons-dbcp/commons-dbcp/1.4</bundle>
+		<bundle>mvn:commons-fileupload/commons-fileupload/1.2.2</bundle>
+		<bundle>mvn:commons-discovery/commons-discovery/0.5</bundle>
+		<bundle>mvn:org.apache.commons/commons-lang3/3.1</bundle>
+		<bundle>mvn:commons-io/commons-io/1.4</bundle>
+	</feature>
 </features>

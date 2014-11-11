@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+    <category-def label="sling-2.0" name="sling-2.0"/>
+        <feature id="sling" version="6" url="features/sling_6.jar">
+        <category name="sling-2.0"/>
+    </feature>
+    <feature id="sling.source" version="6" url="features/sling.source_6.jar">
+        <category name="sling-2.0"/>
+    </feature>
+</site>

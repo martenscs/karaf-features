@@ -191,6 +191,8 @@
 	</feature>
 	<feature name='spring-ws-core' version='2.1.4.RELEASE' resolver='(obr)' start-level='50'>
 		<feature version='2.1.4.RELEASE'>spring-ws</feature>
+		<bundle>mvn:com.sun.xml.ws/webservices-osgi/2.1-b15</bundle>
+		<bundle>mvn:org.jvnet.jax-ws-commons.spring/jaxws-spring/1.9</bundle>
 		<bundle dependency='true'>mvn:org.springframework.ws/spring-ws-core/2.1.4.RELEASE</bundle>
 	</feature>
 	<feature name='spring-ws-support' version='2.1.4.RELEASE' resolver='(obr)' start-level='50'>

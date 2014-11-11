@@ -1,94 +1,119 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>net.martenscs</groupId>
-    <artifactId>jclouds-karaf-1.6.2-incubating-features</artifactId>
-    <version>1.6.2-incubating-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <properties>
-        <domain.context>jclouds-karaf-1.6.2-incubating-features</domain.context>
-    </properties>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>net.martenscs</groupId>
-                <artifactId>karaf-to-p2-plugin</artifactId>
-                <version>1.0.0-SNAPSHOT</version>
-                <executions>
-                    <execution>
-                        <id>convert-to-eclipse</id>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>convert-to-eclipse</goal>
-                        </goals>
-                        <configuration>
-                            <forceStartAllActivators>true</forceStartAllActivators>
-                            <featureFile>${domain.context}.xml</featureFile>
-                            <overWrite>true</overWrite>
-                            <outputDirectory> ${project.build.directory}/source/plugins 
-                            </outputDirectory>
-                            <categoryDirectory>./</categoryDirectory>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <!-- Publish a p2 repository from the plain dbaccess bundles -->
-            <plugin>
-                <groupId>org.eclipse.tycho.extras</groupId>
-                <artifactId>tycho-p2-extras-plugin</artifactId>
-                <version>0.19.0</version>
-                <executions>
-                    <execution>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>publish-features-and-bundles</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <compress>false</compress>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.3</version>
-                <executions>
-                    <execution>
-                        <id>create-war</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>war</goal>
-                        </goals>
-                        <configuration>
-                            <webResources>
-                                <resource>
-                                    <!-- this is relative to the pom.xml directory -->
-                                    <directory>${project.build.directory}/repository</directory>
-                                </resource>
-                            </webResources>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>copy-war</id>
-                        <phase>install</phase>
-                        <configuration>
-                            <target>
-                                <copy file="${project.build.directory}/${project.build.finalName}.war" tofile="${project.build.directory}/${domain.context}.war" />
-                            </target>
-                        </configuration>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.martenscs</groupId>
+	<artifactId>jclouds-karaf-1.6.2-incubating-features</artifactId>
+	<version>1.6.2-incubating-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<properties>
+		<domain.context>jclouds-karaf-1.6.2-incubating-features</domain.context>
+	</properties>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>net.martenscs</groupId>
+				<artifactId>karaf-to-p2-plugin</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+				<executions>
+					<execution>
+						<id>convert-to-eclipse</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>convert-to-eclipse</goal>
+						</goals>
+						<configuration>
+							<forceStartAllActivators>true</forceStartAllActivators>
+							<featureFile>${domain.context}.xml</featureFile>
+							<overWrite>true</overWrite>
+							<outputDirectory> ${project.build.directory}/source/plugins
+							</outputDirectory>
+							<categoryDirectory>./</categoryDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- Publish a p2 repository from the plain dbaccess bundles -->
+			<plugin>
+				<groupId>org.eclipse.tycho.extras</groupId>
+				<artifactId>tycho-p2-extras-plugin</artifactId>
+				<version>0.19.0</version>
+				<executions>
+					<execution>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>publish-features-and-bundles</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<compress>false</compress>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.7</version>
+				<executions>
+					<execution>
+						<phase>prepare-package</phase>
+						<configuration>
+							<target>
+								<xslt in="${project.build.directory}/repository/artifacts.xml" out="${project.build.directory}/repository/artifacts.xml.2" style="src/main/stylesheet.xslt">
+									<param name="pNewType" expression="${domain.context}" />
+								</xslt>
+								<copy file="${project.build.directory}/repository/artifacts.xml.2" tofile="${project.build.directory}/repository/artifacts.xml" />
+								<xslt in="${project.build.directory}/repository/content.xml" out="${project.build.directory}/repository/content.xml.2" style="src/main/stylesheet.xslt">
+									<param name="pNewType" expression="${domain.context}" />
+								</xslt>
+								<copy file="${project.build.directory}/repository/content.xml.2" tofile="${project.build.directory}/repository/content.xml" />
+								<delete file="${project.build.directory}/repository/content.xml.2" />
+								<delete file="${project.build.directory}/repository/artifacts.xml.2" />
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.3</version>
+				<executions>
+					<execution>
+						<id>create-war</id>
+						<phase>package</phase>
+						<goals>
+							<goal>war</goal>
+						</goals>
+						<configuration>
+							<webResources>
+								<resource>
+									<!-- this is relative to the pom.xml directory -->
+									<directory>${project.build.directory}/repository</directory>
+								</resource>
+							</webResources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy-war</id>
+						<phase>install</phase>
+						<configuration>
+							<target>
+								<copy file="${project.build.directory}/${project.build.finalName}.war" tofile="${project.build.directory}/${domain.context}.war" />
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>

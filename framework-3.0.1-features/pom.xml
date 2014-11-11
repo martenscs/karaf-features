@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.martenscs</groupId>
 	<artifactId>framework-3.0.1-features</artifactId>
@@ -37,7 +36,7 @@
 				<executions>
 					<execution>
 						<id>convert-to-eclipse</id>
-						<phase>prepare-package</phase>
+						<phase>process-resources</phase>
 						<goals>
 							<goal>convert-to-eclipse</goal>
 						</goals>
@@ -60,7 +59,7 @@
 				<version>0.19.0</version>
 				<executions>
 					<execution>
-						<phase>prepare-package</phase>
+						<phase>compile</phase>
 						<goals>
 							<goal>publish-features-and-bundles</goal>
 						</goals>
@@ -69,6 +68,32 @@
 				<configuration>
 					<compress>false</compress>
 				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.7</version>
+				<executions>
+					<execution>
+						<phase>prepare-package</phase>
+						<configuration>
+							<target>
+								<xslt in="${project.build.directory}/repository/artifacts.xml" out="${project.build.directory}/repository/artifacts.xml.2" style="src/main/stylesheet.xslt">
+									<param name="pNewType" expression="${domain.context}" />
+								</xslt>
+								<copy file="${project.build.directory}/repository/artifacts.xml.2" tofile="${project.build.directory}/repository/artifacts.xml" />
+								<xslt in="${project.build.directory}/repository/content.xml" out="${project.build.directory}/repository/content.xml.2" style="src/main/stylesheet.xslt">
+									<param name="pNewType" expression="${domain.context}" />
+								</xslt>
+								<copy file="${project.build.directory}/repository/content.xml.2" tofile="${project.build.directory}/repository/content.xml" />
+								<delete file="${project.build.directory}/repository/content.xml.2" />
+								<delete file="${project.build.directory}/repository/artifacts.xml.2" />
+							</target>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -101,9 +126,7 @@
 						<phase>install</phase>
 						<configuration>
 							<target>
-								<copy
-									file="${project.build.directory}/${project.build.finalName}.war"
-									tofile="${project.build.directory}/${domain.context}.war" />
+								<copy file="${project.build.directory}/${project.build.finalName}.war" tofile="${project.build.directory}/${domain.context}.war" />
 							</target>
 						</configuration>
 						<goals>

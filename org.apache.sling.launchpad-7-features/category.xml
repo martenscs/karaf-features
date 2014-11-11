@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+    <category-def label="sling-7.0" name="sling-7.0"/>
+        <feature id="felix-dependancies" version="7" url="features/felix-dependancies_7.jar">
+        <category name="sling-7.0"/>
+    </feature>
+    <feature id="felix-dependancies.source" version="7" url="features/felix-dependancies.source_7.jar">
+        <category name="sling-7.0"/>
+    </feature>
+    <feature id="dependancies" version="7" url="features/dependancies_7.jar">
+        <category name="sling-7.0"/>
+    </feature>
+    <feature id="dependancies.source" version="7" url="features/dependancies.source_7.jar">
+        <category name="sling-7.0"/>
+    </feature>
+    <feature id="jackrabbit" version="2.7.5" url="features/jackrabbit_2.7.5.jar">
+        <category name="sling-7.0"/>
+    </feature>
+    <feature id="jackrabbit.source" version="2.7.5" url="features/jackrabbit.source_2.7.5.jar">
+        <category name="sling-7.0"/>
+    </feature>
+    <feature id="sling" version="7" url="features/sling_7.jar">
+        <category name="sling-7.0"/>
+    </feature>
+    <feature id="sling.source" version="7" url="features/sling.source_7.jar">
+        <category name="sling-7.0"/>
+    </feature>
+</site>

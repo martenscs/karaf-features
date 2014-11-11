@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="sling.source" label="sling sources" version="6">
+
+   <description>
+      test
+   </description>
+
+   <copyright>
+      test
+   </copyright>
+
+   <license url="">
+      test
+   </license>
+
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.commons.io.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.commons.fileupload.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.commons.collections.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.commons.lang.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.commons.osgi.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.commons.mime.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.commons.classloader.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.commons.scheduler.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.commons.threads.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.event.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.api.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.settings.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.auth.core.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.engine.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.auth.openid.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.auth.form.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.auth.selector.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.adapter.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.servlets.resolver.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.servlets.get.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.servlets.post.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.jcr.contentloader.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.jcr.resource.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.jcr.ocm.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.jcr.classloader.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.bundleresource.impl.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.fsresource.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.launchpad.content.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.scripting.api.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.scripting.core.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.scripting.javascript.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.scripting.jsp.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.scripting.jsp.taglib.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="groovy-all.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.felix.http.whiteboard.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.aries.jmx.api.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.aries.util.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.aries.jmx.core.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.aries.jmx.whiteboard.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.installer.core.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.installer.provider.file.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.installer.provider.jcr.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.geronimo.specs.geronimo-jta_1.1_spec.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.commons.log.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.extensions.webconsolebranding.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.extensions.webconsolesecurityprovider.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.felix.webconsole.plugins.event.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.felix.webconsole.plugins.memoryusage.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.commons.json.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.felix.bundlerepository.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.extensions.threaddump.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.jcr.webconsole.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.extensions.explorer.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.felix.eventadmin.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.felix.scr.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.felix.metatype.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="javax.jcr.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.jcr.api.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.jcr.base.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.jackrabbit.jackrabbit-api.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.tika.bundle.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.jcr.jackrabbit.server.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.jcr.jackrabbit.usermanager.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.jcr.jackrabbit.accessmanager.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.jackrabbit.jackrabbit-jcr-commons.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.jackrabbit.jackrabbit-spi.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.jackrabbit.jackrabbit-spi-commons.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.jackrabbit.jackrabbit-jcr-rmi.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.jcr.webdav.source"/>
+<plugin version="0.0.0" download-size="0" install-size="0" unpack="false" id="org.apache.sling.jcr.davex.source"/>
+</feature>

@@ -7,7 +7,19 @@
     <feature id="pax-logging" version="0.2.3" url="features/pax-logging_0.2.3.jar">
         <category name="orbit-features"/>
     </feature>
+    <feature id="felix-logging" version="1.0.1" url="features/felix-logging_1.0.1.jar">
+        <category name="orbit-features"/>
+    </feature>
+    <feature id="felix-logging.source" version="1.0.1" url="features/felix-logging.source_1.0.1.jar">
+        <category name="orbit-features"/>
+    </feature>
     <feature id="grizzly" version="2.1.4" url="features/grizzly_2.1.4.jar">
+        <category name="orbit-features"/>
+    </feature>
+    <feature id="jackson-jaxrs" version="1.9.13" url="features/jackson-jaxrs_1.9.13.jar">
+        <category name="orbit-features"/>
+    </feature>
+    <feature id="http-whiteboard" version="3.1.0" url="features/http-whiteboard_3.1.0.jar">
         <category name="orbit-features"/>
     </feature>
 </site>
