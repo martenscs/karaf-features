@@ -137,10 +137,10 @@
 		<bundle start-level='40'>mvn:org.apache.cxf/cxf-rt-transports-http/2.7.13</bundle>
 	</feature>
 	<feature name="http-whiteboard" description="Provide HTTP Whiteboard pattern support" version="3.1.0" resolver="(obr)">
-		<bundle start-level="30">mvn:org.ops4j.pax.web/pax-web-extender-whiteboard/3.1.0</bundle>
+	
 	</feature>
 	<feature name="jetty" description="Placeholder for support" version="8.0.0" resolver="(obr)">
-		<bundle start-level="30">mvn:org.ops4j.pax.web/pax-web-extender-whiteboard/3.1.0</bundle>
+		
 	</feature>
 	<feature name="cxf-http-jetty" version="2.7.13" resolver='(obr)'>
 		<feature version="[2,3)">cxf-http</feature>

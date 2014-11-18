@@ -2,8 +2,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.martenscs</groupId>
-	<artifactId>spring-integration-3.0.1.RELEASE-features</artifactId>
-	<version>2.3.3-SNAPSHOT</version>
+	<artifactId>activiti-karaf-5.10-features</artifactId>
+	<version>5.10.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<repositories>
 		<repository>
@@ -26,14 +26,18 @@
 			<url>http://repository.springsource.com/maven/bundles/external</url>
 		</repository>
 		<repository>
+			<id>buzzmedia</id>
+			<url>http://maven.thebuzzmedia.com</url> <!-- ImageScalr -->
+		</repository>
+		<repository>
 			<id>http://maven-us.nuxeo.org/</id>
 			<name></name>
-			<url>http://zodiac.springsource.com/maven/bundles/release/</url>
+			<url>https://maven-us.nuxeo.org/nexus/content/repositories/public</url>
 		</repository>
 
 	</repositories>
 	<properties>
-		<domain.context>spring-integration-3.0.1.RELEASE-features</domain.context>
+		<domain.context>activiti-karaf-5.10-features</domain.context>
 	</properties>
 	<build>
 		<finalName>spring-integration-features</finalName>
@@ -86,20 +90,15 @@
 						<phase>prepare-package</phase>
 						<configuration>
 							<target>
-								<xslt in="${project.build.directory}/repository/artifacts.xml"
-									out="${project.build.directory}/repository/artifacts.xml.2"
+								<xslt in="${project.build.directory}/repository/artifacts.xml" out="${project.build.directory}/repository/artifacts.xml.2"
 									style="src/main/stylesheet.xslt">
 									<param name="pNewType" expression="${domain.context}" />
 								</xslt>
-								<copy file="${project.build.directory}/repository/artifacts.xml.2"
-									tofile="${project.build.directory}/repository/artifacts.xml" />
-								<xslt in="${project.build.directory}/repository/content.xml"
-									out="${project.build.directory}/repository/content.xml.2"
-									style="src/main/stylesheet.xslt">
+								<copy file="${project.build.directory}/repository/artifacts.xml.2" tofile="${project.build.directory}/repository/artifacts.xml" />
+								<xslt in="${project.build.directory}/repository/content.xml" out="${project.build.directory}/repository/content.xml.2" style="src/main/stylesheet.xslt">
 									<param name="pNewType" expression="${domain.context}" />
 								</xslt>
-								<copy file="${project.build.directory}/repository/content.xml.2"
-									tofile="${project.build.directory}/repository/content.xml" />
+								<copy file="${project.build.directory}/repository/content.xml.2" tofile="${project.build.directory}/repository/content.xml" />
 								<delete file="${project.build.directory}/repository/content.xml.2" />
 								<delete file="${project.build.directory}/repository/artifacts.xml.2" />
 							</target>
@@ -141,9 +140,7 @@
 						<phase>install</phase>
 						<configuration>
 							<target>
-								<copy
-									file="${project.build.directory}/${project.build.finalName}.war"
-									tofile="${project.build.directory}/${domain.context}.war" />
+								<copy file="${project.build.directory}/${project.build.finalName}.war" tofile="${project.build.directory}/${domain.context}.war" />
 							</target>
 						</configuration>
 						<goals>
