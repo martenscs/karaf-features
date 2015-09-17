@@ -849,9 +849,7 @@
 		<bundle>mvn:org.jfree/jcommon/1.0.23</bundle>
 		<bundle>mvn:org.freemarker/freemarker/2.3.20</bundle>
 		<bundle>mvn:com.sun.xml/com.springsource.com.sun.xml.bind/2.2.0</bundle>
-
 		<bundle>mvn:com.sun.xml/com.springsource.com.sun.xml.fastinfoset/1.2.2</bundle>
-
 		<bundle>mvn:org.dom4j/com.springsource.org.dom4j/1.6.1</bundle>
 		<bundle>mvn:com.sun.xml/com.springsource.com.sun.tools.xjc/2.2.0</bundle>
 		<!-- the ecj bundle on the central is malformed as both 'META-INF' and 'META-INF/MANIFEST.MF' entries are NOT the first 2 entries 

@@ -85,22 +85,14 @@
 		<bundle start-level="30">mvn:org.apache.aries.quiesce/org.apache.aries.quiesce.api/1.0.0</bundle>
 	</feature>
 	<feature name="org.apache.felix.webconsole" version="4.0.0">
-		<bundle start="true">mvn:org.apache.felix/org.apache.felix.webconsole/4.0.0
-		</bundle>
-		<bundle start="true">mvn:org.apache.felix/org.apache.felix.webconsole.plugins.packageadmin/1.0.0
-		</bundle>
-		<bundle start="true">mvn:org.apache.felix/org.apache.felix.webconsole.plugins.event/1.0.2
-		</bundle>
-		<bundle start="true">mvn:org.apache.felix/org.apache.felix.webconsole.plugins.memoryusage/1.0.2
-		</bundle>
-		<bundle start="true">mvn:org.apache.felix/org.apache.felix.bundlerepository/1.6.4
-		</bundle>
-		<bundle start="true">mvn:org.apache.felix/org.apache.felix.eventadmin/1.2.14
-		</bundle>
-		<bundle start="true">mvn:org.apache.felix/org.apache.felix.http.whiteboard/2.2.0
-		</bundle>
-		<bundle start="true">mvn:org.apache.felix/org.apache.felix.metatype/1.0.4
-		</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.webconsole/4.0.0</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.webconsole.plugins.packageadmin/1.0.0</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.webconsole.plugins.event/1.0.2</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.webconsole.plugins.memoryusage/1.0.2</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.bundlerepository/1.6.4</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.eventadmin/1.2.14</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.http.whiteboard/2.2.0</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.metatype/1.0.4</bundle>
 	</feature>
 	<feature name="commons" description="Provides an OSGi-aware Apache Commons" version="2.3.4" resolver="(obr)">
 		<bundle>mvn:commons-logging/commons-logging-api/1.1</bundle>

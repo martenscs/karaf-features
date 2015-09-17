@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.martenscs</groupId>
 	<artifactId>spring-integration-3.0.5.RELEASE-features</artifactId>
@@ -25,7 +26,7 @@
 			<url>http://repository.springsource.com/maven/bundles/external</url>
 		</repository>
 		<repository>
-			<id>http://maven-us.nuxeo.org/</id>
+			<id>maven-us.nuxeo.org</id>
 			<name></name>
 			<url>http://zodiac.springsource.com/maven/bundles/release/</url>
 		</repository>
@@ -83,7 +84,8 @@
 						<phase>prepare-package</phase>
 						<configuration>
 							<target>
-								<xslt in="${project.build.directory}/repository/artifacts.xml" out="${project.build.directory}/repository/artifacts.xml.2" style="src/main/stylesheet.xslt">
+								<xslt in="${project.build.directory}/repository/artifacts.xml" out="${project.build.directory}/repository/artifacts.xml.2"
+									style="src/main/stylesheet.xslt">
 									<param name="pNewType" expression="${domain.context}" />
 								</xslt>
 								<copy file="${project.build.directory}/repository/artifacts.xml.2" tofile="${project.build.directory}/repository/artifacts.xml" />

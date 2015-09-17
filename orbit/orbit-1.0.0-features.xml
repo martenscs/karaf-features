@@ -22,21 +22,21 @@
 		<bundle>mvn:commons-io/commons-io/1.4</bundle>
 
 	</feature>
-	<feature name="pax-logging">
-		<bundle>mvn:org.ops4j.pax.confman/pax-confman-propsloader/0.2.3</bundle>
-	</feature>
-	<feature name="felix-logging">
-		<bundle>mvn:org.apache.felix/org.apache.felix.log/1.0.1</bundle>
-	</feature>
-	<feature name="grizzly">
-		<bundle>mvn:org.glassfish.grizzly.osgi/grizzly-httpservice-bundle/2.1.4</bundle>
-	</feature>
-	<feature name="jackson-jaxrs" version="1.9.13">
-		<bundle>mvn:org.codehaus.jackson/jackson-jaxrs/1.9.13</bundle>
-		<bundle>mvn:org.codehaus.jackson/jackson-core-asl/1.9.13</bundle>
-		<bundle>mvn:org.codehaus.jackson/jackson-mapper-asl/1.9.13</bundle>
-	</feature>
-	<feature name="http-whiteboard" description="Provide HTTP Whiteboard pattern support" version="3.1.0" resolver="(obr)">
-		<bundle start-level="30">mvn:org.ops4j.pax.web/pax-web-extender-whiteboard/3.1.0</bundle>
-	</feature>
+<!-- 	<feature name="pax-logging"> -->
+<!-- 		<bundle>mvn:org.ops4j.pax.confman/pax-confman-propsloader/0.2.3</bundle> -->
+<!-- 	</feature> -->
+<!-- 	<feature name="felix-logging"> -->
+<!-- 		<bundle>mvn:org.apache.felix/org.apache.felix.log/1.0.1</bundle> -->
+<!-- 	</feature> -->
+<!-- 	<feature name="grizzly"> -->
+<!-- 		<bundle>mvn:org.glassfish.grizzly.osgi/grizzly-httpservice-bundle/2.1.4</bundle> -->
+<!-- 	</feature> -->
+<!-- 	<feature name="jackson-jaxrs" version="1.9.13"> -->
+<!-- 		<bundle>mvn:org.codehaus.jackson/jackson-jaxrs/1.9.13</bundle> -->
+<!-- 		<bundle>mvn:org.codehaus.jackson/jackson-core-asl/1.9.13</bundle> -->
+<!-- 		<bundle>mvn:org.codehaus.jackson/jackson-mapper-asl/1.9.13</bundle> -->
+<!-- 	</feature> -->
+<!-- 	<feature name="http-whiteboard" description="Provide HTTP Whiteboard pattern support" version="3.1.0" resolver="(obr)"> -->
+<!-- 		<bundle start-level="30">mvn:org.ops4j.pax.web/pax-web-extender-whiteboard/3.1.0</bundle> -->
+<!-- 	</feature> -->
 </features>

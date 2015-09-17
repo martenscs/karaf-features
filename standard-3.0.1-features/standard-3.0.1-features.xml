@@ -64,11 +64,7 @@
         <bundle start-level="30" start="true">mvn:org.apache.karaf.config/org.apache.karaf.config.core/3.0.1</bundle>
         <bundle start-level="30" start="true">mvn:org.apache.karaf.config/org.apache.karaf.config.command/3.0.1</bundle>
     </feature>
-    <feature name="region" version="3.0.1" description="Provide Region Support">
-        <bundle start-level="30">mvn:org.eclipse.equinox/region/1.0.0.v20110506</bundle>
-        <bundle start-level="30">mvn:org.apache.karaf.region/org.apache.karaf.region.persist/3.0.1</bundle>
-        <bundle start-level="30">mvn:org.apache.karaf.region/org.apache.karaf.region.command/3.0.1</bundle>
-    </feature>
+
     <feature name="package" version="3.0.1" description="Package commands and mbeans" resolver="(obr)">
         <bundle start-level="30">mvn:org.apache.karaf.package/org.apache.karaf.package.core/3.0.1</bundle>
         <bundle start-level="30">mvn:org.apache.karaf.package/org.apache.karaf.package.command/3.0.1</bundle>

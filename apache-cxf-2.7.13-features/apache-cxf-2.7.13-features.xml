@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements. See the NOTICE file distributed 
-	with this work for additional information regarding copyright ownership. The ASF licenses this file to You under the Apache License, 
-	Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License 
-	at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under 
-	the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the 
-	License for the specific language governing permissions and limitations under the License. -->
+<!-- Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements. See the NOTICE file distributed with 
+	this work for additional information regarding copyright ownership. The ASF licenses this file to You under the Apache License, Version 2.0 
+	(the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+	Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT 
+	WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations 
+	under the License. -->
 <features xmlns="http://karaf.apache.org/xmlns/features/v1.0.0" name="cxf-2.7.13">
 	<feature name="spring" version="3.2.4.RELEASE" description="Spring 3.2.x support" resolver="(obr)">
 		<bundle start-level='9'>mvn:org.apache.geronimo.specs/geronimo-osgi-registry/1.1</bundle>
@@ -17,17 +17,12 @@
 	</feature>
 	<feature name="cxf-specs" version="2.7.13" resolver='(obr)'>
 		<bundle start-level='9'>mvn:org.apache.geronimo.specs/geronimo-osgi-registry/1.1</bundle>
-		<bundle start-level='10' dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.activation-api-1.1/2.2.0
-		</bundle>
+		<bundle start-level='10' dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.activation-api-1.1/2.2.0</bundle>
 		<bundle start-level='10'>mvn:org.apache.geronimo.specs/geronimo-annotation_1.0_spec/1.1.1</bundle>
-		<bundle start-level='10' dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.stax-api-1.0/2.2.0
-		</bundle>
-		<bundle start-level='10' dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jaxb-api-2.2/2.2.0
-		</bundle>
-		<bundle start-level='10' dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jaxws-api-2.2/2.2.0
-		</bundle>
-		<bundle start-level='10' dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.saaj-api-1.3/2.2.0
-		</bundle>
+		<bundle start-level='10' dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.stax-api-1.0/2.2.0</bundle>
+		<bundle start-level='10' dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jaxb-api-2.2/2.2.0</bundle>
+		<bundle start-level='10' dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jaxws-api-2.2/2.2.0</bundle>
+		<bundle start-level='10' dependency="true">mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.saaj-api-1.3/2.2.0</bundle>
 		<bundle start-level='10'>mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jsr339-api-m10/2.2.0</bundle>
 		<bundle start-level='10' dependency="true">mvn:javax.mail/mail/1.4.4</bundle>
 
@@ -137,10 +132,10 @@
 		<bundle start-level='40'>mvn:org.apache.cxf/cxf-rt-transports-http/2.7.13</bundle>
 	</feature>
 	<feature name="http-whiteboard" description="Provide HTTP Whiteboard pattern support" version="3.1.0" resolver="(obr)">
-	
+
 	</feature>
 	<feature name="jetty" description="Placeholder for support" version="8.0.0" resolver="(obr)">
-		
+
 	</feature>
 	<feature name="cxf-http-jetty" version="2.7.13" resolver='(obr)'>
 		<feature version="[2,3)">cxf-http</feature>
@@ -173,7 +168,9 @@
 		<feature version="2.7.13">cxf-http</feature>
 
 		<bundle start-level="30" dependency="true">mvn:org.codehaus.jettison/jettison/1.3.6</bundle>
-
+		<bundle>mvn:org.codehaus.jackson/jackson-jaxrs/1.9.13</bundle>
+		<bundle>mvn:org.codehaus.jackson/jackson-core-asl/1.9.13</bundle>
+		<bundle>mvn:org.codehaus.jackson/jackson-mapper-asl/1.9.13</bundle>
 		<bundle start-level='40'>mvn:org.apache.cxf/cxf-rt-bindings-xml/2.7.13</bundle>
 		<bundle start-level='40'>mvn:org.apache.cxf/cxf-rt-rs-extension-providers/2.7.13</bundle>
 		<bundle start-level='40'>mvn:org.apache.cxf/cxf-rt-rs-extension-search/2.7.13</bundle>

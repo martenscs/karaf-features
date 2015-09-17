@@ -1,22 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>net.martenscs</groupId>
-    <artifactId>karaf-features</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <modules>
-        <module>standard-2.3.0-features</module>
-        <module>standard-2.3.3-features</module>
-        <module>standard-2.3.4-features</module>
-        <module>enterprise-2.3.0-features</module>
-        <module>enterprise-2.3.3-features</module>
-        <module>enterprise-2.3.4-features</module>
-        <module>apache-camel-2.12.2-features </module>
-        <module>jclouds-karaf-1.6.2-incubating-features</module>
-        <module>apache-servicemix-4.5.3-features</module>
-        <module>openejb-feature-4.5.2-features</module>
-        <module>apache-servicemix-nmr-1.6.1-features</module>
-    </modules>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.martenscs</groupId>
+	<artifactId>karaf-features</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>activiti-karaf-5.10-features</module>
+		<module>apache-camel-2.12.2-features</module>
+		<module>apache-camel-2.13.2-features</module>
+		<module>apache-cxf-2.7.13-features</module>
+		<module>apache-cxf-2.7.7-features</module>
+		<module>apache-cxf-3.0.2-features</module>
+		<module>apache-servicemix-4.5.3-features</module>
+		<module>apache-servicemix-5.1.2-features</module>
+		<module>apache-servicemix-nmr-1.6.1-features</module>
+		<module>aries-3.0.1-features</module>
+		<module>cxf-dosgi-1.6.0-features</module>
+		<module>enterprise-2.3.0-features</module>
+		<module>enterprise-2.3.3-features</module>
+		<module>enterprise-2.3.4-features</module>
+		<module>enterprise-3.0.1-features</module>
+		<module>enterprise-4.0.0.M1-features</module>
+		<module>framework-3.0.1-features</module>
+		<module>jaxws-spring-2.8-features</module>
+		<module>jclouds-karaf-1.6.2-incubating-features</module>
+		<module>jersey-2.10.1-features</module>
+		<module>openejb-feature-4.5.2-features</module>
+		<module>optaplanner-6.0.1.Final-features</module>
+		<module>orbit</module>
+		<module>org.apache.sling.launchpad-6-features</module>
+		<module>org.apache.sling.launchpad-7-features</module>
+		<module>spring-3.0.1-features</module>
+		<module>spring-4.0.0.M1-features</module>
+		<module>spring-integration-3.0.1.RELEASE-features</module>
+		<module>spring-integration-3.0.5.RELEASE-features</module>
+		<module>spring-integration-3.0.6.RELEASE-features</module>
+		<module>standard-2.3.0-features</module>
+		<module>standard-2.3.3-features</module>
+		<module>standard-2.3.4-features</module>
+		<module>standard-3.0.1-features</module>
+		<module>vaadin-7.3.0-features</module>
+
+	</modules>
 </project>

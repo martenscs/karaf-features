@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.martenscs</groupId>
 	<artifactId>apache-cxf-2.7.13-features</artifactId>
@@ -34,6 +35,7 @@
 		<domain.context>apache-cxf-2.7.13-features</domain.context>
 	</properties>
 	<build>
+		<finalName>${domain.context}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>net.martenscs</groupId>
@@ -84,7 +86,8 @@
 						<phase>prepare-package</phase>
 						<configuration>
 							<target>
-								<xslt in="${project.build.directory}/repository/artifacts.xml" out="${project.build.directory}/repository/artifacts.xml.2" style="src/main/stylesheet.xslt">
+								<xslt in="${project.build.directory}/repository/artifacts.xml" out="${project.build.directory}/repository/artifacts.xml.2"
+									style="src/main/stylesheet.xslt">
 									<param name="pNewType" expression="${domain.context}" />
 								</xslt>
 								<copy file="${project.build.directory}/repository/artifacts.xml.2" tofile="${project.build.directory}/repository/artifacts.xml" />
