@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="camel-drools-example-6.2.0.Final" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.0.0 http://karaf.apache.org/xmlns/features/v1.0.0">
+	<!-- <repository>mvn:org.apache.camel.karaf/apache-camel/2.14.0/xml/features</repository> -->
+	<repository>mvn:org.apache.cxf.karaf/apache-cxf/2.7.14/xml/features</repository>
+<!-- 	<repository>mvn:org.apache.camel.karaf/apache-camel/2.14.0/xml/features</repository> -->
+	<feature name='optaplanner' version='6.2.0.Final' resolver='(obr)'
+		start-level='50'>
+		<bundle dependency='true'>mvn:commons-lang/commons-lang/2.6</bundle>
+		<bundle dependency='true'>mvn:commons-io/commons-io/1.4</bundle>
+		<bundle dependency='true'>mvn:commons-collections/commons-collections/3.2.1</bundle>
+		<bundle dependency='true'>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xstream/1.4.7_1</bundle>
+		<bundle>mvn:org.apache.commons/commons-math3/3.5</bundle>
+		<bundle dependency='true'>mvn:org.optaplanner/optaplanner-core/6.2.0.Final</bundle>
+	</feature>
+
+	<feature name="drools-common" version="6.2.0.Final"
+		description="Drools Commons">
+		<feature version="[2.6,3.0)">cxf-specs</feature>
+		<bundle>mvn:com.google.protobuf/protobuf-java/2.5.0</bundle>
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.antlr/3.5_1</bundle>
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xstream/1.4.3_1</bundle>
+		<bundle start-level='10'>mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jaxb-api-2.2/1.9.0</bundle>
+		<bundle start-level='10'>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jaxb-xjc/2.2.1.1_2</bundle>
+		<bundle start-level='10'>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jaxb-impl/2.2.1.1_2</bundle>
+		<bundle>mvn:org.mvel/mvel2/2.2.4.Final</bundle>
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.jdt-core/3.2.3_5</bundle>
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.janino/2.6.1_1</bundle>
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.commons-compiler/2.6.1_1</bundle>
+		<bundle>mvn:org.apache.geronimo.specs/geronimo-atinject_1.0_spec/1.0</bundle>
+		<bundle>wrap:mvn:javax.enterprise/cdi-api/1.0-SP4</bundle>
+		<bundle>mvn:commons-codec/commons-codec/1.7</bundle>
+	</feature>
+
+	<feature name="drools-module" version="6.2.0.Final"
+		description="Drools core">
+		<feature version="6.2.0.Final">drools-common</feature>
+		<feature version="6.2.0.Final">kie</feature>
+		<bundle>mvn:org.drools/drools-core/6.2.0.Final</bundle>
+		<bundle>mvn:org.drools/drools-compiler/6.2.0.Final</bundle>
+		<bundle>mvn:org.drools/drools-osgi-integration/6.2.0.Final</bundle>
+	</feature>
+
+	<feature name="drools-templates" version="6.2.0.Final"
+		description="Drools Templates">
+		<bundle>mvn:org.drools/drools-templates/6.2.0.Final</bundle>
+	</feature>
+
+	<feature name="drools5-spring" version="6.2.0.Final"
+		description="Drools5 Spring">
+		<feature version="[3.0,4.0)">spring</feature>
+		<bundle>mvn:org.drools/drools-spring-legacy5/6.1.0.Beta4</bundle>
+	</feature>
+
+	<feature name="drools5-camel" version="6.2.0.Final"
+		description="Drools5 Camel">
+		<feature version="6.2.0.Final">drools-module</feature>
+		<feature version="6.2.0.Final">drools5-spring</feature>
+		<feature version="2.14.0">camel</feature>
+		<feature version="2.14.0">camel-cxf</feature>
+		<feature version="[2.6,3.0)">cxf-specs</feature>
+		<feature version="[2.6,3.0)">cxf-core</feature>
+		<feature version="[2.6,3.0)">cxf-jaxrs</feature>
+		<bundle>mvn:org.drools/drools-camel-legacy5/6.1.0.Beta4</bundle>
+	</feature>
+
+	<feature name="drools-decisiontable" description="Drools Decision Tables"
+		version="6.2.0.Final">
+		<feature version="6.2.0.Final">drools-module</feature>
+		<feature version="6.2.0.Final">drools-templates</feature>
+		<bundle>mvn:commons-codec/commons-codec/1.7</bundle>
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.poi/3.9_2</bundle>
+		<bundle>mvn:org.drools/drools-decisiontables/6.2.0.Final</bundle>
+	</feature>
+
+	<feature name="drools-jpa" version="6.2.0.Final" description="Drools JPA">
+		<feature version="6.2.0.Final">drools-module</feature>
+		<feature version="[3.1,4.0)">spring-orm</feature>
+		<feature version="[1.0.1,2.0)">jpa</feature>
+		<bundle>mvn:org.drools/drools-persistence-jpa/6.2.0.Final</bundle>
+	</feature>
+
+	<feature name="kie" version="6.2.0.Final">
+		<bundle>mvn:org.kie/kie-api/6.2.0.Final</bundle>
+		<bundle>mvn:org.kie/kie-internal/6.2.0.Final</bundle>
+	</feature>
+
+	<feature name="kie-ci" version="6.2.0.Final">
+		<bundle>mvn:org.kie/kie-ci-osgi/6.2.0.Final</bundle>
+	</feature>
+	<feature name="transaction" version="1.0.1" description="OSGi Transaction Manager"
+		resolver="(obr)">
+		<details>JTA implementation provided by Apache Aries Transaction 1.0.1</details>
+		<config name="org.apache.aries.transaction">
+			aries.transaction.recoverable = true
+			aries.transaction.timeout = 600
+			aries.transaction.howl.logFileDir =
+			${karaf.data}/txlog
+			aries.transaction.howl.maxLogFiles = 2
+			aries.transaction.howl.maxBlocksPerFile = 512
+			aries.transaction.howl.bufferSizeKBytes = 4
+		</config>
+		<bundle start-level="30" dependency="true">mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1</bundle>
+		<bundle start-level="30">mvn:org.apache.aries.transaction/org.apache.aries.transaction.blueprint/1.0.1</bundle>
+		<bundle start-level="30">mvn:org.apache.aries.transaction/org.apache.aries.transaction.manager/1.1.0</bundle>
+		<bundle start-level="30">mvn:org.apache.aries.transaction/org.apache.aries.transaction.wrappers/1.0.0</bundle>
+		<bundle start-level="30">mvn:org.apache.aries.transaction/org.apache.aries.transaction.jdbc/2.0.0</bundle>
+	</feature>
+	<feature name="jpa" version="1.0.1" description="OSGi Persistence Container"
+		resolver="(obr)">
+		<details>JPA implementation provided by Apache Aries JPA 1.0.1. NB: this feature doesn&quot;t provide the JPA engine, you have
+			to install one by yourself (OpenJPA for instance)
+		</details>
+		<bundle start-level="30" dependency="true">mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1</bundle>
+		<bundle start-level="30" dependency="true">mvn:org.apache.geronimo.specs/geronimo-jpa_2.0_spec/1.1</bundle>
+		<bundle start-level="30">mvn:org.apache.aries.jpa/org.apache.aries.jpa.api/1.0.0</bundle>
+		<bundle start-level="30">mvn:org.apache.aries.jpa/org.apache.aries.jpa.blueprint.aries/1.0.1</bundle>
+		<bundle start-level="30">mvn:org.apache.aries.jpa/org.apache.aries.jpa.container/1.0.0</bundle>
+		<bundle start-level="30">mvn:org.apache.aries.jpa/org.apache.aries.jpa.container.context/1.0.1</bundle>
+	</feature>
+	<feature name="spring-dm" version="1.2.1" description="Spring DM support"
+		resolver="(obr)">
+
+		<bundle start-level="30" dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.cglib/3.0_1</bundle>
+		<bundle start-level="30">mvn:org.springframework.osgi/spring-osgi-io/1.2.1</bundle>
+		<bundle start-level="30">mvn:org.springframework.osgi/spring-osgi-core/1.2.1</bundle>
+		<bundle start-level="30">mvn:org.springframework.osgi/spring-osgi-extender/1.2.1</bundle>
+		<bundle start-level="30">mvn:org.springframework.osgi/spring-osgi-annotation/1.2.1</bundle>
+	</feature>
+	<feature name="spring" version="3.2.11.RELEASE" description="Spring 3.2.x support"
+		resolver="(obr)">
+		<feature version="[1.2.1,4)">spring-dm</feature>
+		<bundle start-level="30" dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.aopalliance/1.0_6</bundle>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-core/3.2.11.RELEASE_1</bundle>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-expression/3.2.11.RELEASE_1</bundle>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-beans/3.2.11.RELEASE_1</bundle>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-aop/3.2.11.RELEASE_1</bundle>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-context/3.2.11.RELEASE_1</bundle>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-context-support/3.2.11.RELEASE_1</bundle>
+	</feature>
+	<feature name="spring-karaf" version="3.2.11.RELEASE"
+		description="Spring 3.2.x support" resolver="(obr)">
+		<feature version="[3.2.11.RELEASE,3.3)">spring</feature>
+		<bundle start-level="30">mvn:org.apache.karaf.deployer/org.apache.karaf.deployer.spring/3.0.1</bundle>
+	</feature>
+	<feature name="spring-aspects" version="3.2.11.RELEASE"
+		description="Spring 3.2.x AOP support" resolver="(obr)">
+		<feature version="[3.2.11.RELEASE,3.3)">spring</feature>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-aspects/3.2.11.RELEASE_1</bundle>
+	</feature>
+	<feature name="spring-instrument" version="3.2.11.RELEASE"
+		description="Spring 3.2.x Instrument support" resolver="(obr)">
+		<feature version="[3.2.11.RELEASE,3.3)">spring</feature>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-instrument/3.2.11.RELEASE_1</bundle>
+	</feature>
+	<feature name="spring-jdbc" version="3.2.11.RELEASE"
+		description="Spring 3.2.x JDBC support" resolver="(obr)">
+		<feature version="[3.2.11.RELEASE,3.3)">spring-tx</feature>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-jdbc/3.2.11.RELEASE_1</bundle>
+	</feature>
+	<feature name="spring-jms" version="3.2.11.RELEASE"
+		description="Spring 3.2.x JMS support" resolver="(obr)">
+		<feature version="[3.2.11.RELEASE,3.3)">spring-tx</feature>
+		<bundle start-level="10">mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1</bundle>
+		<bundle start-level="10">mvn:org.apache.geronimo.specs/geronimo-jms_1.1_spec/1.1.1</bundle>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-jms/3.2.11.RELEASE_1</bundle>
+	</feature>
+	<feature name="spring-struts" version="3.2.11.RELEASE"
+		description="Spring 3.2.x Struts support" resolver="(obr)">
+		<feature version="[3.2.11.RELEASE,3.3)">spring-web</feature>
+		<feature>war</feature>
+		<bundle start-level="30" dependency="true">mvn:commons-collections/commons-collections/3.2.1</bundle>
+		<bundle start-level="30" dependency="true">mvn:commons-beanutils/commons-beanutils/1.9.1</bundle>
+		<bundle start-level="30" dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.struts/1.3.10_1</bundle>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-struts/3.2.11.RELEASE_1</bundle>
+	</feature>
+	<feature name="spring-test" version="3.2.11.RELEASE"
+		description="Spring 3.2.x Test support" resolver="(obr)">
+		<feature version="[3.2.11.RELEASE,3.3)">spring</feature>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-test/3.2.11.RELEASE_1</bundle>
+	</feature>
+	<feature name="spring-orm" version="3.2.11.RELEASE"
+		description="Spring 3.2.x ORM support" resolver="(obr)">
+		<feature version="[3.2.11.RELEASE,3.3)">spring-jdbc</feature>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-orm/3.2.11.RELEASE_1</bundle>
+	</feature>
+	<feature name="spring-oxm" version="3.2.11.RELEASE"
+		description="Spring 3.2.x OXM support" resolver="(obr)">
+		<feature version="[3.2.11.RELEASE,3.3)">spring</feature>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-oxm/3.2.11.RELEASE_1</bundle>
+	</feature>
+	<feature name="spring-tx" version="3.2.11.RELEASE"
+		description="Spring 3.2.x Transaction (TX) support" resolver="(obr)">
+		<feature version="[3.2.11.RELEASE,3.3)">spring</feature>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-tx/3.2.11.RELEASE_1</bundle>
+	</feature>
+	<feature name="spring-web" version="3.2.11.RELEASE"
+		description="Spring 3.2.x Web support" resolver="(obr)">
+		<feature version="[3.2.11.RELEASE,3.3)">spring</feature>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-web/3.2.11.RELEASE_1</bundle>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-webmvc/3.2.11.RELEASE_1</bundle>
+
+	</feature>
+	<feature name="kie-spring" version="6.2.0.Final">
+		<feature version="6.2.0.Final">kie</feature>
+		<feature version="6.2.0.Final">drools-jpa</feature>
+		<feature version="6.2.0.Final">jbpm</feature>
+		<feature version="6.2.0.Final">jbpm-human-task</feature>
+		<feature version="[3.1,4.0)">spring</feature>
+		<bundle>mvn:org.kie/kie-spring/6.2.0.Final</bundle>
+	</feature>
+
+	<feature name="kie-aries-blueprint" version="6.2.0.Final">
+		<feature version="6.2.0.Final">kie</feature>
+		<feature version="6.2.0.Final">drools-jpa</feature>
+		<feature version="6.2.0.Final">jbpm</feature>
+		<feature version="6.2.0.Final">jbpm-human-task</feature>
+		<bundle>mvn:org.kie/kie-aries-blueprint/6.2.0.Final</bundle>
+	</feature>
+
+	<feature name="kie-camel" version="6.2.0.Final">
+		<feature version="6.2.0.Final">kie-spring</feature>
+		<feature version="6.2.0.Final">jbpm</feature>
+		<feature version="2.14.0">camel-core</feature>
+		<feature version="2.14.0">camel-spring</feature>
+		<feature version="2.14.0">camel-cxf</feature>
+		<feature version="[2.6,3.0)">cxf-specs</feature>
+		<feature version="[2.6,3.0)">cxf-core</feature>
+		<feature version="[2.6,3.0)">cxf-jaxrs</feature>
+		<bundle>mvn:org.kie/kie-camel/6.2.0.Final</bundle>
+	</feature>
+
+	<feature name="jbpm-commons" version="6.2.0.Final" description="jBPM Commons">
+		<bundle>mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.scripting-api-1.0/2.4.0</bundle>
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.quartz/1.8.5_2</bundle>
+		<bundle>mvn:org.jboss.spec.javax.security.jacc/jboss-jacc-api_1.5_spec/1.0.0.Final</bundle>
+		<bundle>mvn:joda-time/joda-time/1.6.2</bundle>
+		<bundle>mvn:org.jboss.spec.javax.interceptor/jboss-interceptors-api_1.2_spec/1.0.0.Final</bundle>
+		<bundle>mvn:org.apache.geronimo.specs/geronimo-servlet_3.0_spec/1.0</bundle>
+		<bundle>mvn:org.apache.geronimo.specs/geronimo-jms_1.1_spec/1.1.1</bundle>
+		<bundle>mvn:org.apache.geronimo.specs/geronimo-jpa_2.0_spec/1.1</bundle>
+		<bundle>mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1</bundle>
+	</feature>
+
+	<feature name="jbpm-human-task" version="6.2.0.Final"
+		description="jBPM engine">
+		<bundle>mvn:org.codehaus.jackson/jackson-core-asl/1.9.9</bundle>
+		<bundle>mvn:org.jbpm/jbpm-human-task-core/6.2.0.Final</bundle>
+		<bundle>mvn:org.jbpm/jbpm-human-task-workitems/6.2.0.Final</bundle>
+		<bundle>mvn:org.jbpm/jbpm-human-task-jpa/6.2.0.Final</bundle>
+		<bundle>mvn:org.jbpm/jbpm-human-task-audit/6.2.0.Final</bundle>
+	</feature>
+
+	<feature name="jbpm" version="6.2.0.Final" description="jBPM engine">
+		<feature version="6.2.0.Final">drools-module</feature>
+		<feature version="6.2.0.Final">drools-jpa</feature>
+		<feature version="6.2.0.Final">jbpm-commons</feature>
+		<feature version="6.2.0.Final">jbpm-human-task</feature>
+		<bundle>mvn:org.jbpm/jbpm-flow-builder/6.2.0.Final</bundle>
+		<bundle>mvn:org.jbpm/jbpm-flow/6.2.0.Final</bundle>
+		<bundle>mvn:org.jbpm/jbpm-bpmn2/6.2.0.Final</bundle>
+		<bundle>mvn:org.jbpm/jbpm-audit/6.2.0.Final</bundle>
+		<bundle>mvn:org.jbpm/jbpm-runtime-manager/6.2.0.Final</bundle>
+		<bundle>mvn:org.jbpm/jbpm-persistence-jpa/6.2.0.Final</bundle>
+	</feature>
+
+	<feature name="drools-decision-table-kie-spring-camel-example"
+		version="6.2.0.Final" description="Drools Decision Table Kie Spring Camel Example">
+		<feature version="6.2.0.Final">drools-module</feature>
+		<feature version="6.2.0.Final">drools-decisiontable</feature>
+		<feature version="6.2.0.Final">kie-spring</feature>
+		<feature version="6.2.0.Final">kie-camel</feature>
+		<bundle start-level="100">mvn:org.drools/spring-camel-drools-decision-table-example/6.2.0.Final</bundle>
+	</feature>
+
+	<feature name="drools-decision-kie-blueprint-camel-example"
+		version="6.2.0.Final" description="Drools Decision Table Kie Blueprint Camel Example">
+		<feature version="6.2.0.Final">drools-module</feature>
+		<feature version="6.2.0.Final">drools-decisiontable</feature>
+		<feature version="6.2.0.Final">kie-aries-blueprint</feature>
+		<feature version="6.2.0.Final">kie-camel</feature>
+		<bundle>mvn:org.drools/blueprint-camel-drools-decision-table-example/6.2.0.Final</bundle>
+	</feature>
+
+	<feature name="jbpm-example" version="6.2.0.Final" description="jBPM Spring Example">
+		<feature version="6.2.0.Final">jbpm</feature>
+		<bundle>mvn:org.drools/spring-jbpm-osgi-example/6.2.0.Final</bundle>
+	</feature>
+
+	<!-- This bundle should be removed with next release of Drools 6.1.Beta4 -->
+	<feature name="lib" version="6.2.0.Final">
+		<bundle>mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.scripting-api-1.0/2.4.0</bundle>
+	</feature>
+
+	<!-- Spring jBPM Persistent OSGi -->
+	<!-- <feature name="jbpm-spring-persistent" version="6.2.0.Final" description="jBPM 
+		Spring OSGi Example"> -->
+	<!-- <feature version="6.2.0.Final">jbpm</feature> -->
+	<!-- <feature version="6.2.0.Final">lib</feature> -->
+	<!-- <feature>spring-dm</feature> -->
+	<!-- <feature version="6.2.0.Final">kie-spring</feature> -->
+	<!-- <feature>droolsjbpm-hibernate</feature> -->
+	<!-- <feature version="1.4.178">h2</feature> -->
+	<!-- </feature> -->
+
+	<feature name="droolsjbpm-hibernate" version="4.2.15.Final"
+		description="Hibernate 4.2.x JPA persistence engine support">
+		<details>Enable Hibernate 4.2.x as persistence engine.</details>
+		<feature>transaction</feature>
+		<feature>jpa</feature>
+		<bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.antlr/2.7.7_5</bundle>
+		<bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.ant/1.8.2_2</bundle>
+		<bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.dom4j/1.6.1_5</bundle>
+		<bundle dependency="true">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.serp/1.14.1_1</bundle>
+		<bundle dependency="true">mvn:com.fasterxml/classmate/0.9.0</bundle>
+		<bundle dependency="true">mvn:org.javassist/javassist/3.18.1-GA</bundle>
+		<bundle dependency="true">mvn:org.jboss.spec.javax.security.jacc/jboss-jacc-api_1.4_spec/1.0.3.Final</bundle>
+		<bundle dependency="true">wrap:mvn:org.jboss/jandex/1.1.0.Final</bundle>
+		<bundle dependency="true">mvn:javax.validation/validation-api/1.1.0.Final</bundle>
+		<bundle dependency="true">mvn:org.jboss.logging/jboss-logging/3.1.4.GA</bundle>
+		<bundle dependency="true">mvn:org.hibernate.common/hibernate-commons-annotations/4.0.2.Final</bundle>
+		<bundle start-level="100">wrap:mvn:org.hibernate/hibernate-core/4.2.15.Final$overwrite=merge&amp;Import-Package=org.jbpm.services.task*,*</bundle>
+		<bundle start-level="100">wrap:mvn:org.hibernate/hibernate-entitymanager/4.2.15.Final$overwrite=merge&amp;DynamicImport-Package=*</bundle>
+		<bundle start-level="100">mvn:org.hibernate/hibernate-osgi/4.2.15.Final</bundle>
+	</feature>
+
+	<feature name="hibernate-validator" version="4.3.1.Final">
+		<bundle>mvn:org.apache.servicemix.specs/org.apache.servicemix.specs.jsr303-api-1.1.0/2.4.0</bundle>
+		<bundle>mvn:org.jboss.logging/jboss-logging/3.1.4.GA</bundle>
+		<bundle>mvn:org.hibernate/hibernate-validator/4.3.1.Final</bundle>
+	</feature>
+
+	<feature name="h2" version="1.4.178" description="h2 database">
+		<bundle>mvn:com.h2database/h2/1.4.178</bundle>
+		<bundle start-level="100">mvn:commons-dbcp/commons-dbcp/1.4</bundle>
+		<bundle start-level="100">mvn:commons-pool/commons-pool/1.6</bundle>
+	</feature>
+
+</features>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="features" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+	<feature name='orientdb' version='1.6'>
+		<bundle>mvn:com.orientechnologies/orient-commons/1.6</bundle>
+		<bundle>mvn:net.java.dev.jna/jna/4.0.0</bundle>
+		<bundle>mvn:org.apache.geronimo.specs/geronimo-jpa_2.0_spec/1.1</bundle>
+		<bundle>mvn:org.javassist/javassist/3.18.1-GA</bundle>
+		<bundle>mvn:com.orientechnologies/orientdb-nativeos/1.6</bundle>
+		<bundle>mvn:com.orientechnologies/orientdb-core/1.6</bundle>
+		<bundle>mvn:com.orientechnologies/orientdb-object/1.6</bundle>
+	</feature>
+</features>
