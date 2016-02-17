@@ -371,7 +371,7 @@
         </capability>
     </feature>
     	<feature name="spring-integration" description="Spring Integration Support" version="4.1.6.RELEASE" resolver="(obr)">
-		<bundle start-level="30">mvn:org.springframework.integration/spring-integration-core/4.1.6.RELEASE</bundle>
+		<bundle start-level="30">mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.spring-integration-core/4.1.6.RELEASE_1</bundle>
 		<bundle start-level="30">mvn:org.springframework.integration/spring-integration-http/4.1.6.RELEASE</bundle>
 		<bundle start-level="30">mvn:org.springframework.integration/spring-integration-stream/4.1.6.RELEASE</bundle>
 		<bundle start-level="30">mvn:org.springframework.integration/spring-integration-xml/4.1.6.RELEASE</bundle>
@@ -380,19 +380,30 @@
 		<bundle start-level="30">mvn:org.springframework.integration/spring-integration-jpa/4.1.6.RELEASE</bundle>
 		<bundle start-level="30">mvn:org.springframework.integration/spring-integration-file/4.1.6.RELEASE</bundle>
 		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.serp/1.13.1_4</bundle>
-		<bundle>mvn:org.projectreactor/reactor-core/1.0.1.RELEASE</bundle>
-		<bundle>mvn:commons-net/commons-net/3.0.1</bundle>
-		<bundle>mvn:io.fastjson/boon/0.33</bundle>
-		<bundle>mvn:org.springframework.retry/spring-retry/1.0.2.RELEASE</bundle>
-		<bundle>mvn:com.fasterxml.jackson.core/jackson-databind/2.2.3</bundle>
-		<bundle>mvn:com.fasterxml.jackson.core/jackson-core/2.2.3</bundle>
-		<bundle>mvn:com.jayway.jsonpath/json-path/0.8.1</bundle>
-		<bundle>mvn:net.minidev/json-smart/1.2</bundle>
-		<bundle>mvn:org.codehaus.jackson/jackson-mapper-asl/1.9.10</bundle>
-		<bundle>mvn:org.codehaus.jackson/jackson-core-asl/1.9.10</bundle>
-		<bundle>mvn:com.fasterxml.jackson.core/jackson-annotations/2.2.3</bundle>
-		<bundle>mvn:org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.0.Final</bundle>
-
+		
+<!-- 		<bundle>mvn:org.projectreactor/reactor-core/1.1.6.RELEASE</bundle> -->
+<!-- 		<bundle>mvn:com.google.protobuf/protobuf-java/2.6.1</bundle> -->
+<!-- 		<bundle>mvn:com.esotericsoftware.kryo/kryo/2.24.0</bundle> -->
+<!-- 		<bundle>mvn:com.esotericsoftware.minlog/minlog/1.2</bundle> -->
+<!-- 		<bundle>mvn:com.goldmansachs/gs-collections/6.2.0</bundle> -->
+<!-- 		<bundle>mvn:com.goldmansachs/gs-collections-api/6.2.0</bundle> -->
+<!-- 		<bundle>mvn:net.jcip/jcip-annotations/1.0</bundle> -->
+<!-- 		<bundle>mvn:org.objenesis/objenesis/2.2</bundle> -->
+<!-- 		<bundle>mvn:commons-net/commons-net/3.0.1</bundle> -->
+<!-- 		<bundle>mvn:io.fastjson/boon/0.33</bundle> -->
+<!-- 		<bundle>mvn:org.springframework.retry/spring-retry/1.0.2.RELEASE</bundle> -->
+<!-- 		<bundle>mvn:com.fasterxml.jackson.core/jackson-databind/2.6.2</bundle> -->
+<!-- 		<bundle>mvn:com.fasterxml.jackson.core/jackson-core/2.6.2</bundle> -->
+<!-- 		<bundle>mvn:com.jayway.jsonpath/json-path/2.0.0</bundle> -->
+<!-- 		<bundle>mvn:net.minidev/json-smart/1.2</bundle> -->
+<!-- 		<bundle>mvn:org.codehaus.jackson/jackson-mapper-asl/1.9.10</bundle> -->
+<!-- 		<bundle>mvn:org.codehaus.jackson/jackson-core-asl/1.9.10</bundle> -->
+<!-- 		<bundle>mvn:com.fasterxml.jackson.core/jackson-annotations/2.2.3</bundle> -->
+<!-- 		<bundle>mvn:org.hibernate.javax.persistence/hibernate-jpa-2.0-api/1.0.0.Final</bundle> -->
+<!-- 		<bundle>mvn:com.fasterxml.jackson.module/jackson-module-afterburner/2.6.2</bundle> -->
+<!-- 		<bundle>mvn:com.fasterxml.jackson.core/jackson-annotations/2.6.2</bundle> -->
+<!-- 		<bundle>mvn:com.google.code.gson/gson/2.3.1</bundle> -->
+<!-- 		<bundle>mvn:net.minidev/json-smart/2.2</bundle> -->
 	</feature>
 	<feature name='spring-ws' version='2.2.2.RELEASE' resolver='(obr)' start-level='50'>
 		<bundle>mvn:org.jvnet.mimepull/mimepull/1.9</bundle>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+    <category-def label="spring-4.0.4" name="spring-4.0.4"/>
+        <feature id="spring-dm" version="1.2.1" url="features/spring-dm_1.2.1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-dm-web" version="1.2.1" url="features/spring-dm-web_1.2.1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring" version="3.1.4.RELEASE" url="features/spring_3.1.4.RELEASE.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-aspects" version="3.1.4.RELEASE" url="features/spring-aspects_3.1.4.RELEASE.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-instrument" version="3.1.4.RELEASE" url="features/spring-instrument_3.1.4.RELEASE.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-jdbc" version="3.1.4.RELEASE" url="features/spring-jdbc_3.1.4.RELEASE.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-jms" version="3.1.4.RELEASE" url="features/spring-jms_3.1.4.RELEASE.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-struts" version="3.1.4.RELEASE" url="features/spring-struts_3.1.4.RELEASE.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-test" version="3.1.4.RELEASE" url="features/spring-test_3.1.4.RELEASE.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-orm" version="3.1.4.RELEASE" url="features/spring-orm_3.1.4.RELEASE.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-oxm" version="3.1.4.RELEASE" url="features/spring-oxm_3.1.4.RELEASE.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-tx" version="3.1.4.RELEASE" url="features/spring-tx_3.1.4.RELEASE.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-web" version="3.1.4.RELEASE" url="features/spring-web_3.1.4.RELEASE.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-web-portlet" version="3.1.4.RELEASE" url="features/spring-web-portlet_3.1.4.RELEASE.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring" version="3.2.14.RELEASE_1" url="features/spring_3.2.14.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-aspects" version="3.2.14.RELEASE_1" url="features/spring-aspects_3.2.14.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-instrument" version="3.2.14.RELEASE_1" url="features/spring-instrument_3.2.14.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-jdbc" version="3.2.14.RELEASE_1" url="features/spring-jdbc_3.2.14.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-jms" version="3.2.14.RELEASE_1" url="features/spring-jms_3.2.14.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-struts" version="3.2.14.RELEASE_1" url="features/spring-struts_3.2.14.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-test" version="3.2.14.RELEASE_1" url="features/spring-test_3.2.14.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-orm" version="3.2.14.RELEASE_1" url="features/spring-orm_3.2.14.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-oxm" version="3.2.14.RELEASE_1" url="features/spring-oxm_3.2.14.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-tx" version="3.2.14.RELEASE_1" url="features/spring-tx_3.2.14.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-web" version="3.2.14.RELEASE_1" url="features/spring-web_3.2.14.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-web-portlet" version="3.2.14.RELEASE_1" url="features/spring-web-portlet_3.2.14.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring" version="4.0.7.RELEASE_3" url="features/spring_4.0.7.RELEASE_3.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-aspects" version="4.0.7.RELEASE_3" url="features/spring-aspects_4.0.7.RELEASE_3.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-instrument" version="4.0.7.RELEASE_3" url="features/spring-instrument_4.0.7.RELEASE_3.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-jdbc" version="4.0.7.RELEASE_3" url="features/spring-jdbc_4.0.7.RELEASE_3.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-jms" version="4.0.7.RELEASE_3" url="features/spring-jms_4.0.7.RELEASE_3.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-test" version="4.0.7.RELEASE_3" url="features/spring-test_4.0.7.RELEASE_3.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-orm" version="4.0.7.RELEASE_3" url="features/spring-orm_4.0.7.RELEASE_3.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-oxm" version="4.0.7.RELEASE_3" url="features/spring-oxm_4.0.7.RELEASE_3.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-tx" version="4.0.7.RELEASE_3" url="features/spring-tx_4.0.7.RELEASE_3.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-web" version="4.0.7.RELEASE_3" url="features/spring-web_4.0.7.RELEASE_3.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-web-portlet" version="4.0.7.RELEASE_3" url="features/spring-web-portlet_4.0.7.RELEASE_3.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-websocket" version="4.0.7.RELEASE_3" url="features/spring-websocket_4.0.7.RELEASE_3.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring" version="4.1.7.RELEASE_2" url="features/spring_4.1.7.RELEASE_2.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-aspects" version="4.1.7.RELEASE_2" url="features/spring-aspects_4.1.7.RELEASE_2.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-instrument" version="4.1.7.RELEASE_2" url="features/spring-instrument_4.1.7.RELEASE_2.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-jdbc" version="4.1.7.RELEASE_2" url="features/spring-jdbc_4.1.7.RELEASE_2.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-jms" version="4.1.7.RELEASE_2" url="features/spring-jms_4.1.7.RELEASE_2.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-test" version="4.1.7.RELEASE_2" url="features/spring-test_4.1.7.RELEASE_2.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-orm" version="4.1.7.RELEASE_2" url="features/spring-orm_4.1.7.RELEASE_2.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-oxm" version="4.1.7.RELEASE_2" url="features/spring-oxm_4.1.7.RELEASE_2.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-tx" version="4.1.7.RELEASE_2" url="features/spring-tx_4.1.7.RELEASE_2.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-web" version="4.1.7.RELEASE_2" url="features/spring-web_4.1.7.RELEASE_2.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-web-portlet" version="4.1.7.RELEASE_2" url="features/spring-web-portlet_4.1.7.RELEASE_2.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-websocket" version="4.1.7.RELEASE_2" url="features/spring-websocket_4.1.7.RELEASE_2.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring" version="4.2.3.RELEASE_1" url="features/spring_4.2.3.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-aspects" version="4.2.3.RELEASE_1" url="features/spring-aspects_4.2.3.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-instrument" version="4.2.3.RELEASE_1" url="features/spring-instrument_4.2.3.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-jdbc" version="4.2.3.RELEASE_1" url="features/spring-jdbc_4.2.3.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-jms" version="4.2.3.RELEASE_1" url="features/spring-jms_4.2.3.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-test" version="4.2.3.RELEASE_1" url="features/spring-test_4.2.3.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-orm" version="4.2.3.RELEASE_1" url="features/spring-orm_4.2.3.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-oxm" version="4.2.3.RELEASE_1" url="features/spring-oxm_4.2.3.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-tx" version="4.2.3.RELEASE_1" url="features/spring-tx_4.2.3.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-web" version="4.2.3.RELEASE_1" url="features/spring-web_4.2.3.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-web-portlet" version="4.2.3.RELEASE_1" url="features/spring-web-portlet_4.2.3.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-websocket" version="4.2.3.RELEASE_1" url="features/spring-websocket_4.2.3.RELEASE_1.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="spring-security" version="3.1.4.RELEASE" url="features/spring-security_3.1.4.RELEASE.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <feature id="gemini-blueprint" version="1.0.2.RELEASE" url="features/gemini-blueprint_1.0.2.RELEASE.jar">
+        <category name="spring-4.0.4"/>
+    </feature>
+    <category-def label="org.ops4j.pax.web-4.2.4" name="org.ops4j.pax.web-4.2.4"/>
+        <feature id="pax-jetty" version="9.2.14.v20151106" url="features/pax-jetty_9.2.14.v20151106.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <feature id="pax-jetty-spdy" version="4.2.4" url="features/pax-jetty-spdy_4.2.4.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <feature id="pax-http-jetty" version="4.2.4" url="features/pax-http-jetty_4.2.4.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <feature id="pax-http" version="4.2.4" url="features/pax-http_4.2.4.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <feature id="pax-http-whiteboard" version="4.2.4" url="features/pax-http-whiteboard_4.2.4.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <feature id="pax-war" version="4.2.4" url="features/pax-war_4.2.4.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <feature id="pax-http-tomcat" version="4.2.4" url="features/pax-http-tomcat_4.2.4.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <feature id="pax-war-tomcat" version="4.2.4" url="features/pax-war-tomcat_4.2.4.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <feature id="pax-jsf-support" version="4.2.4" url="features/pax-jsf-support_4.2.4.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <category-def label="standard-4.0.4" name="standard-4.0.4"/>
+        <feature id="framework-security" version="4.0.4" url="features/framework-security_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="service-security" version="4.0.4" url="features/service-security_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="aries-proxy" version="4.0.4" url="features/aries-proxy_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="aries-blueprint" version="4.0.4" url="features/aries-blueprint_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="aries-annotation" version="4.0.4" url="features/aries-annotation_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="feature" version="4.0.4" url="features/feature_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="jaas-boot" version="0.0.0" url="features/jaas-boot_0.0.0.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="shell" version="4.0.4" url="features/shell_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="shell-compat" version="4.0.4" url="features/shell-compat_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="deployer" version="4.0.4" url="features/deployer_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="wrapper" version="4.0.4" url="features/wrapper_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="service-wrapper" version="4.0.4" url="features/service-wrapper_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="obr" version="4.0.4" url="features/obr_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="bundle" version="4.0.4" url="features/bundle_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="config" version="4.0.4" url="features/config_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="diagnostic" version="4.0.4" url="features/diagnostic_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="instance" version="4.0.4" url="features/instance_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="jaas" version="4.0.4" url="features/jaas_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="log" version="4.0.4" url="features/log_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="package" version="4.0.4" url="features/package_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="service" version="4.0.4" url="features/service_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="system" version="4.0.4" url="features/system_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="http" version="4.0.4" url="features/http_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="http-whiteboard" version="4.0.4" url="features/http-whiteboard_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="war" version="4.0.4" url="features/war_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="jetty" version="9.2.10.v20150310" url="features/jetty_9.2.10.v20150310.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="jetty" version="8.1.14.v20131031" url="features/jetty_8.1.14.v20131031.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="kar" version="4.0.4" url="features/kar_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="webconsole" version="4.0.4" url="features/webconsole_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="ssh" version="4.0.4" url="features/ssh_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="management" version="4.0.4" url="features/management_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="scheduler" version="4.0.4" url="features/scheduler_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="eventadmin" version="4.0.4" url="features/eventadmin_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="jasypt-encryption" version="4.0.4" url="features/jasypt-encryption_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="scr" version="4.0.4" url="features/scr_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="blueprint-web" version="4.0.4" url="features/blueprint-web_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="wrap" version="0.0.0" url="features/wrap_0.0.0.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="profile" version="4.0.4" url="features/profile_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="jolokia" version="1.3.2" url="features/jolokia_1.3.2.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="standard" version="4.0.4" url="features/standard_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="minimal" version="4.0.4" url="features/minimal_4.0.4.jar">
+        <category name="standard-4.0.4"/>
+    </feature>
+    <feature id="pax-jetty" version="9.2.14.v20151106" url="features/pax-jetty_9.2.14.v20151106.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <feature id="pax-jetty-spdy" version="4.2.4" url="features/pax-jetty-spdy_4.2.4.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <feature id="pax-http-jetty" version="4.2.4" url="features/pax-http-jetty_4.2.4.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <feature id="pax-http" version="4.2.4" url="features/pax-http_4.2.4.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <feature id="pax-http-whiteboard" version="4.2.4" url="features/pax-http-whiteboard_4.2.4.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <feature id="pax-war" version="4.2.4" url="features/pax-war_4.2.4.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <feature id="pax-http-tomcat" version="4.2.4" url="features/pax-http-tomcat_4.2.4.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <feature id="pax-war-tomcat" version="4.2.4" url="features/pax-war-tomcat_4.2.4.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+    <feature id="pax-jsf-support" version="4.2.4" url="features/pax-jsf-support_4.2.4.jar">
+        <category name="org.ops4j.pax.web-4.2.4"/>
+    </feature>
+</site>

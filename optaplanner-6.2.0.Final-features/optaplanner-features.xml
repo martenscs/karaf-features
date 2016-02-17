@@ -26,6 +26,7 @@
 		<bundle dependency='true'>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.kxml2/2.3.0_2</bundle>
 		<bundle dependency='true'>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.xstream/1.4.8_1</bundle>
 	</feature>
+	
 	<feature name="drools-common" version="6.2.0.Final"
 		description="Drools Commons">
 		<feature version="[2.6,3.0)">cxf-specs</feature>

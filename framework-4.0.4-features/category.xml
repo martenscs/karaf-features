@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+    <category-def label="framework-4.0.4" name="framework-4.0.4"/>
+        <feature id="framework" version="4.0.4" url="features/framework_4.0.4.jar">
+        <category name="framework-4.0.4"/>
+    </feature>
+</site>

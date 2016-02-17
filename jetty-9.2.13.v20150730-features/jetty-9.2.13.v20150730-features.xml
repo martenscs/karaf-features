@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="framework-3.0.1">
 	<feature name="framework" version="3.0.1" description="Karaf core feature">
-		<bundle start-level="12" start="true">mvn:org.ow2.asm/asm-all/4.1</bundle>
+		<bundle start-level="12" start="true">mvn:org.ow2.asm/asm-all/5.0.3</bundle>
 		<bundle start-level="20" start="true">mvn:org.apache.aries/org.apache.aries.util/1.1.0</bundle>
 		<bundle start-level="20" start="true">mvn:org.apache.aries.proxy/org.apache.aries.proxy.api/1.0.0</bundle>
 		<bundle start-level="20" start="true">mvn:org.apache.aries.proxy/org.apache.aries.proxy.impl/1.0.2</bundle>
@@ -10,6 +10,24 @@
 		<bundle start-level="20" start="true">mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.core.compatibility/1.0.0</bundle>
 		<bundle start-level="20" start="true">mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.core/1.4.0</bundle>
 		<bundle start-level="30">mvn:org.apache.aries.quiesce/org.apache.aries.quiesce.api/1.0.0</bundle>
+		<bundle>mvn:javax.servlet.jsp/javax.servlet.jsp-api/2.3.2-b02</bundle>
+	</feature>
+	<feature name="org.apache.felix.webconsole" version="4.0.0">
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.webconsole/4.0.0</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.webconsole.plugins.packageadmin/1.0.0</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.webconsole.plugins.event/1.0.2</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.webconsole.plugins.memoryusage/1.0.2</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.bundlerepository/1.6.4</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.eventadmin/1.2.14</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.http.whiteboard/2.2.0</bundle>
+		<bundle start="true">mvn:org.apache.felix/org.apache.felix.metatype/1.0.4</bundle>
+	</feature>
+
+	<feature name="spi" version="3.0.1" description="Karaf core feature">
+		<bundle start-level="12" start="true">mvn:org.apache.aries.spifly/org.apache.aries.spifly.dynamic.bundle/1.0.2</bundle>
+		<bundle start-level="20" start="true">mvn:org.apache.aries.spifly/org.apache.aries.spifly.core-internal/1.0.2</bundle>
+		<bundle start-level="20" start="true">mvn:org.apache.aries.spifly/org.apache.aries.spifly.weaver-internal/1.0.1</bundle>
+		<bundle>mvn:javax.el/javax.el-api/3.0.0</bundle>
 	</feature>
 	<feature name="transaction" description="OSGi Transaction Manager" version="1.0.1" resolver="(obr)">
 		<details>JTA implementation provided by Apache Aries Transaction 1.0.1</details>
@@ -28,7 +46,7 @@
 	</feature>
 	<feature name="aries-annotation" version="3.0.1" description="Aries Annotations">
 		<bundle start-level="20" dependency="true">mvn:org.apache.commons/commons-jexl/2.1.1</bundle>
-		<bundle start-level="20" dependency="true">mvn:org.ow2.asm/asm-all/4.1</bundle>
+		<bundle start-level="20" dependency="true">mvn:org.ow2.asm/asm-all/5.0.3</bundle>
 		<bundle start-level="20" dependency="true">mvn:org.apache.xbean/xbean-bundleutils/3.16</bundle>
 		<bundle start-level="20" dependency="true">mvn:org.apache.xbean/xbean-asm4-shaded/3.16</bundle>
 		<bundle start-level="20" dependency="true">mvn:org.apache.xbean/xbean-reflect/3.16</bundle>
@@ -39,9 +57,11 @@
 		<bundle start-level="20">mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.jexl.evaluator/1.0.0</bundle>
 	</feature>
 	<feature name="jpa" description="OSGi Persistence Container" version="1.0.1" resolver="(obr)">
-		<details>JPA implementation provided by Apache Aries JPA 1.0.1. NB: this feature doesn't provide the JPA engine, you have to
+		<details>JPA implementation provided by Apache Aries JPA 1.0.1. NB:
+			this feature doesn't provide the JPA engine, you have to
 			install one
-			by yourself (OpenJPA for instance)
+			by
+			yourself (OpenJPA for instance)
 		</details>
 		<bundle dependency="true" start-level="30">mvn:org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1.1</bundle>
 		<bundle dependency="true" start-level="30">mvn:org.apache.geronimo.specs/geronimo-jpa_2.0_spec/1.1</bundle>
@@ -64,7 +84,6 @@
 		<bundle dependency="true" start-level="30">mvn:commons-codec/commons-codec/1.9</bundle>
 		<bundle dependency='true' start-level="30">mvn:commons-lang/commons-lang/2.6</bundle>
 		<bundle dependency="true" start-level="30">mvn:commons-collections/commons-collections/3.2.1</bundle>
-		<bundle dependency="true" start-level="30">mvn:org.apache.commons/commons-collections4/4.0</bundle>
 		<bundle dependency="true" start-level="30">mvn:commons-beanutils/commons-beanutils/1.9.1</bundle>
 		<bundle>mvn:commons-cli/commons-cli/1.2</bundle>
 		<bundle>mvn:commons-pool/commons-pool/1.5.7</bundle>
@@ -76,7 +95,6 @@
 	</feature>
 	<feature name="blueprint-web" version="3.0.1"
 		description="Provides an OSGI-aware Servlet ContextListener for bootstrapping         blueprint inside web-bundle containers" resolver="(obr)">
-
 		<bundle>mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.webosgi/1.0.1</bundle>
 	</feature>
 </features>
